@@ -1,0 +1,55 @@
+$menubackground: #2a3646;
+
+.App{
+  .layout-header {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 52px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 6px 12px 1px rgba(42, 54, 70, 0.09);
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    justify-content: space-between;
+  }
+  .layout-asider {
+    position: fixed;
+    z-index: 1;
+    top: 52px;
+    bottom: 0;
+    left: 0;
+    width: 147px;
+    background:$menubackground;
+    overflow-x: hidden;
+    overflow-y: auto;
+    .ant-menu.ant-menu-dark .ant-menu-item-selected, .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected{
+      background-color: $menubackground;
+    }
+    .ant-menu-dark .ant-menu-inline.ant-menu-sub{
+      background:$menubackground;
+    }
+    .ant-menu-dark .ant-menu-inline.ant-menu-sub {
+      box-shadow: none
+    }
+    .ant-menu-dark, .ant-menu-dark .ant-menu-sub {
+      background:$menubackground;
+    }
+  }
+  .layout-main {
+    margin-left: 147px;
+    padding: 62px 10px 10px 10px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    background: rgba(241, 242, 245, 1);
+    .page-title {
+      font-size: 16px;
+      font-family: Microsoft YaHei;
+      font-weight: 600;
+      color: rgba(77, 77, 77, 1);
+      line-height: 38px;
+    }
+  }
+}
