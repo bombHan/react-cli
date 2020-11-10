@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+
+# react-cli
+这是基于create-react-app搭建的react-cli，里面涵盖了redux，router， sass，antd等各种需要用到的插件，以及对应的demo，可下载直接使用。
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

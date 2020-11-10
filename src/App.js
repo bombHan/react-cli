@@ -5,6 +5,7 @@ import SetRouter from './router';
 import Header from './components/Header'
 import Menu from './components/Menu'
 import { Route } from 'react-router-dom';
+import Title from './components/Title'
 
 class App extends Component {
   constructor(props) {
@@ -15,8 +16,7 @@ class App extends Component {
       <div className="App">
         <Route path='/' component={Header}/>
         <Route path='/' component={Menu}/>
-        {/* <Header />
-        <Menu /> */}
+        <Route path='/' component={Title}/>
         <div className="layout-main"><SetRouter /></div>
       </div>
     );
