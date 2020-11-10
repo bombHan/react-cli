@@ -3,7 +3,8 @@
  */
 
 export const config = {
-    count:1000
+    count:1000,
+    userInfo: {}
 };
 
 
@@ -13,4 +14,8 @@ export const config = {
 
 export function setCount(value) {
     return { type: 'COUNT', value }
+}
+
+export function setUserInfo(value) {
+  return { type: 'USERINFO', value }
 }

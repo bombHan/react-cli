@@ -17,7 +17,7 @@ class Title extends Component {
     this.props.history.go(-1)
   }
   render() {
-    const targetObj = this.findTargetObj(menuConfig)
+    const targetObj = this.findTargetObj(menuConfig) || {}
     console.log('面包屑title render', targetObj);
     return (
       <div className="bread-title">
