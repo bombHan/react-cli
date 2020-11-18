@@ -4,6 +4,14 @@ const menuList = [
     key: '/homepage'
   },
   {
+    name: 'websocket',
+    key: '/websocket'
+  },
+  {
+    name: 'echarts',
+    key: '/echarts'
+  },
+  {
     name: '测试模块',
     key: 'testmode',
     children: [

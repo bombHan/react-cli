@@ -1,0 +1,41 @@
+.websocket-chat{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .discuss-room{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    .discuss-room-content{
+      overflow-y: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 100px;
+    }
+    .discuss-room-bottom{
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      .discuss-room-tool{
+        flex: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 10px;
+        height: 30px;
+        box-sizing: border-box;
+      }
+    }
+  }
+  .private-chat{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+  }
+}
