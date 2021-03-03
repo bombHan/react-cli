@@ -20,7 +20,15 @@ const menuList = [
         key: '/test'
       }
     ]
-  }
+  },
+  {
+    name: 'hooks demo1',
+    key: '/reacthooks'
+  },
+  {
+    name: 'hooks demo2',
+    key: '/reacthookscopy'
+  },
 ]
 
 export default menuList;

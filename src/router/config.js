@@ -2,6 +2,8 @@ import Homepage from '../views/homepage'
 import Test  from '../views/test'
 import Websocket from '../views/websocket'
 import Echarts from '../views/echarts'
+import Reacthooks from '../views/reactHooks'
+import Reacthookscopy from '../views/reactHooksCopy'
 
 const routerConfig = [
   {
@@ -26,6 +28,18 @@ const routerConfig = [
     title: 'echarts',
     showBack: false,
   },
+  {
+    path: '/reacthooks',
+    component: Reacthooks,
+    title: 'react hooks',
+    showBack: false,
+  },
+  {
+    path: '/reacthookscopy',
+    component: Reacthookscopy,
+    title: 'react hooks copy',
+    showBack: false,
+  }
 
 ];
 
