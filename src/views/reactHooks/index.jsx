@@ -22,7 +22,12 @@ export const Context = React.createContext(null);
 
 export default function App() {
   const [state, dispatch] = useReducer(reducer, store);
-
+  useEffect(() =>{
+    console.log('加载父组件，类似于componentdidmount');
+    return () => {
+      console.log('卸载父组件，类似于componentWillUnMount');
+    }
+  }, [])
   const api = { state, dispatch };
   return (
     <Context.Provider value={api}>
