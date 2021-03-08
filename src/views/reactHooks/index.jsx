@@ -1,4 +1,4 @@
-import React, { useReducer, useContext, useEffect } from "react";
+import React, { useReducer, useLayoutEffect, useEffect } from "react";
 import './index.scss';
 import Child1 from './child1'
 import Child2 from './child2'
@@ -27,7 +27,10 @@ export default function App() {
     return () => {
       console.log('卸载父组件，类似于componentWillUnMount');
     }
-  }, [])
+  }, []);
+  useLayoutEffect(()=>{ //在浏览器渲染前执行
+    console.log('在浏览器渲染前执行')
+  })
   const api = { state, dispatch };
   return (
     <Context.Provider value={api}>

@@ -17,7 +17,7 @@ class Header extends Component {
   }
   componentDidMount() {
     console.log('header组件 didmount!', this.props);
-    this.getInfo()
+    // this.getInfo()
   }
   changeCount = () => {
     this.props.setCount(this.props.count + 1)
